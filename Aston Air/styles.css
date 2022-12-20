@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -22,9 +22,9 @@
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    max-width: 2000px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 1px;
 }
 
 
@@ -45,7 +45,7 @@
 }
 
 .navbar__links{
-    color: rgb(0, 0, 0);
+    color: #008011;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +67,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 2.5px 15px;
     height: 100%;
     width: 100%;
     border: none;
@@ -109,12 +109,12 @@
 
     .navbar__menu.active{
         background: #ffffff;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.5s ease;
+        top: 1%;
+        opacity: 0.9;
+        transition: all 0.3s ease;
         z-index: 99;
-        height: 50vh;
-        font-size: 1.6rem;
+        height: 30vh;
+        font-size: 1.5rem;
     }
 
     #navbar__logo{
@@ -124,8 +124,8 @@
     .navbar__toggle .bar{
         width: 25px;
         height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
+        margin: 6px auto;
+        transition: all 0.2s ease-in-out;
         background: #008011;
     }
 
@@ -142,9 +142,9 @@
 
     #mobile-menu{
         position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
+        top: 25%;
+        right: 11%;
+        transform: translate(300%, 20%);
     }
 
     .navbar__btn{
@@ -166,19 +166,20 @@
     }
 
     #mobile-menu.is-active .bar:nth-child(2){
-        opacity: 0;
+        
+        transform: translate(8px) rotate(-45deg);
     }
 
     #mobile-menu.is-active .bar:nth-child(1){
         transform: translate(8px) rotate(45deg);
     }
 
-    #mobile-menu.is .bar:nth-child(3){
-        transform: translate(-8px) rotate(-45deg);
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translate(8px) rotate(45deg);
     }
 
 .main{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .main__container{
@@ -195,6 +196,7 @@
     margin: 0;
     padding: 0;
 }
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -215,17 +217,17 @@ img{
 }
 
 .booking__form{
-    max-width: 350px;
-    border: 1px solid #ffffff;
-    margin: 10% auto 0;
+    max-width: 600px;
+    border: 1px solid #47cc59;
+    margin: 18% auto 0;
 }
 
 .radio__btn{
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .radio__btn .btn{
-    margin: 20px 10px 20px 0;
+    margin: 15px 8px 21px 0;
     box-shadow: none;
 }
 
@@ -235,16 +237,88 @@ img{
     width: 15px;
     top: -2px;
     left: -1px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     position: relative;
     display: inline-block;
-    border: 3px solid #fff;
+    border: 3.5px solid #47cc59;
     visibility: visible;
-    border-radius: 50%;
+    border-radius: 1%;
 }
 
 .radio__btn .btn:checked::after{
     content: '';
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.radio__btn span{
+    color: rgb(255, 255, 255);
+    margin-right: 170px;
+    font-size: 20px;
+}
+
+.booking__forminfo{
+    padding: 0 60px 20px;
+}
+
+.booking__form label{
+    margin-bottom: 10px;
+    margin-top: 10;
+    font-size: 22px;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #008011 !important;
+    font-size: 18px;
+}
+.input__grp{
+    width: 200px;
+    display: inline-block;
+}
+.form__control{
+    font-size: 20px !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.select-date::-webkit-calender-picker-indicator{
+    background: transparent !important;
+}
+
+.custom-select{
+    color: rgb(255, 255, 255) !important;
+    font-size: 12px !important;
+    border: 2.5px solid #47cc59 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+.custom-select option{
+    color: #333;
+}
+
+.flight{
+    width: 100% !important;
+    padding: 9px 0 !important;
+    font-size: 12px !important;
+    border: 1px solid #ced4da !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.flight:hover{
+    background: #008011 !important;
+    color: #fff !important;
     transition: 0.5s;
 }
