@@ -13,14 +13,12 @@
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-        <a href="index.html"><img src="images/logo.jpg"></a>
-                   
+            <img class="image1" src="images/logo.jpg" height="150"/>
             <div class="navbar__toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
             </div>
-
 
             <div class="booking__form">
             <div class="radio__btn">
@@ -32,6 +30,7 @@
                 <label for="Airport">Flying From</label>
                 <input type="text" name="Airport" id="Airport" list="Airport__List" placeholder="Enter City/Airport">
                 <datalist id="Airport__List">
+                    <option value="Heathrow (LHR)">London</option>
                     <option value="Islamabad (ISB)">Pakistan</option>
                     <option value="Jinnah international (KHI)">Pakistan</option>
                     <option value="Allama Iqbal (LHE)">Pakistan</option>
@@ -61,6 +60,7 @@
                 <label for="Airport">Flying To</label>
                 <input type="text" name="Airport" id="Airport" list="Airport__List" placeholder="Enter City/Airport">
                 <datalist id="Airport__List">
+                    <option value="Heathrow (LHR)">London</option>
                     <option value="Islamabad (ISB)">Pakistan</option>
                     <option value="Jinnah international (KHI)">Pakistan</option>
                     <option value="Allama Iqbal (LHE)">Pakistan</option>
@@ -116,11 +116,25 @@
                     <option value="3">First Class</option>
                 </select>
             </div>
-            
+
             <div class="input__grp">
                 <button type="button" class="btn btn-primary flight">Search</button>
             </div>
-
+            
+            <section class="containers">
+                <div class="slider__wrapper">
+                    <div class="slider">
+                        <img id="slide1" src="images/Australiacity.jpg" alt="Australia"/>
+                        <img id="slide1" src="images/Canadacity.jpg" alt="Canada"/>
+                        <img id="slide1" src="images/Pakistancity.jpg" alt="Pakistan"/>
+                        <img id="slide1" src="images/Indiacity.jpg" alt="India"/>
+                        <img id="slide1" src="images/Irancity.jpg" alt="Iran"/>
+                        <img id="slide1" src="images/Egyptcity.jpg" alt="Egypt"/>
+                        <img id="slide1" src="images/Turkeycity.jpg" alt="Turkey"/>
+                    </div>
+                </div>
+            </section>
+            
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
@@ -133,14 +147,13 @@
                     <a href="/" class="navbar__links">Destinations</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">About</a>
+                    <a href="ABOUT.html" class="navbar__links">About</a>
                 </li>
                 <li class="navbar__item">
                     <a href="/" class="navbar__links">Help</a>
                 </li>
             </ul>
         </div>
-
     </nav>
     <script src="app.js"></script>
     <section class="header"></section>
@@ -150,7 +163,7 @@
                 <div class="footer__col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="ABOUT.html">About Us</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Our Team</a></li>
                     </ul>
@@ -164,12 +177,14 @@
                         <li><a href="#">Other Countries</a></li>
                     </ul>
                 </div>
+
                 <div class="footer__col">
                     <h4>Customer Service</h4>
                     <ul>
                         <li><a href="#">Get Help</a></li>
                     </ul>
                 </div>
+
                 <div class="footer__col">
                     <h4>Follow Us</h4>
                 <div class="social__links">
@@ -178,6 +193,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
+
         </div>
     </footer>
 </body>
