@@ -3,7 +3,10 @@
     margin: 0;
 }
 body{
-    background-color: rgb(183, 179, 179);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/Mainpagebackground.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 •about-1{ 
     margin: 30px; 
@@ -11,7 +14,7 @@ body{
 }
 .about-1 h1{
     text-align: center;
-    color: black;
+    color: rgb(220, 179, 179);
     font-weight: bold;
 }
 .about-1 p{
@@ -22,7 +25,7 @@ body{
 .about-item{
     margin-bottom: 20px;
       margin-top: 20px; 
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.411);
       padding: 80px ,30px;
       box-shadow: 0 0 9px rgba(red, green, blue, alpha) (0,0,0.6) ;
 }
