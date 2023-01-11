@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://font.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
 </head>
 <body>
 
@@ -21,9 +22,25 @@
             <span class="bar"></span>
             <span class="bar"></span>
             </div>
+            <div class="help__option">
+                <h1>Contact Options</h1>
+                <h2>Email</h2>
+                <h4>astonair1337@gmail.com</h4>
+                <h2>Phone</h2>
+                <h4>+44349876534</h4>
+                <div class="container1">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <h3>Email Enquiries</h3>
+                        <input type="text" id="name" placeholder="Enter your Name" required>
+                        <input type="email" id="email" placeholder="Enter your Email" required>
+                        <input type="text" id="phone" placeholder="Enter your Phone number" required>
+                        <textarea id="message" rows="4" placeholder="Enter Query"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+            </div>
+            </div>
        
         <ul>
-            
         <ul class="navbar__menu">
             <li class="navbar__item">
                 <a href="index.html" class="navbar__links">Home</a>
@@ -53,13 +70,12 @@
         </div>
 </nav>
 
-
-</div>
 <script src="app.js"></script>
 <section class="header"></section>
 <footer class="footer">
     <div class="container">
         <div class="row">
+            
             <div class="footer__col">
                 <h4>Company</h4>
                 <ul>
@@ -78,7 +94,7 @@
                 </ul>
             </div>
 
-            
+           
 
             <div class="footer__col">
                 <h4>Customer Service</h4>
@@ -86,6 +102,8 @@
                     <li><a href="help.html">Get Help</a></li>
                 </ul>
             </div>
+            
+           
 
             <div class="footer__col">
                 <h4>Follow Us</h4>
@@ -99,5 +117,24 @@
     </div>
     
 </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            username : "astonair1337@gmail.com",
+            password : "Aston1337!",
+            To : 'astonair1337@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Email Enquiry",
+            Body : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone Number: " + document.getElementById("phone").value
+            + "<br> Query: " + document.getElementById("message").value
+        }).then(
+            message => alert("Message Sent Succesfully")
+        );
+    }
+</script>
 </body>
 </html>

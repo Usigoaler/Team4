@@ -341,3 +341,70 @@ ul li a:hover{
 ul li:hover ul.sub__menu{
     display: block;
 }
+
+.help__option{
+    position: absolute;
+    top: 200%;
+    left: 10%;
+}
+.help__option h1{
+    color: #47cc59;
+    margin: 20px 0px 20px;
+    font-size: 40px;
+}
+
+.help__option h2{
+    color: #47cc59;
+    margin: 20px 0px 20px;
+    font-size: 40;
+}
+
+.help__option h4{
+    color: #008011;
+    margin: 20px 0px 20px;
+    font-size: 40;
+}
+
+.container1{
+    width: 100%;
+    height: 100%;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #47cc59;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #47cc59;
+    font-size: 16px;
+}
+
+form, button{
+    padding: 15px;
+    background: grey;
+    color: orange;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
