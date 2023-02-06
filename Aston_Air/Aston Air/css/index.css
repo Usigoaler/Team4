@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', 'sans-serif', 'monospace';
+}
+
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+@media  screen and (max-width: 960px) {
+    
+    
+
+    .main{
+        background-color: rgb(0, 0, 0);
+    }
+
+    .main__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-self: center;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/Mainpagebackground.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10% 0px;
+}
+
+img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 130%;
+}
+
+.booking__form{
+    max-width: 600px;
+    border-top: 1px solid #47cc59;
+    margin: 0 auto;
+}
+
+.radio__btn{
+    margin: 0 10px;
+}
+
+.radio__btn .btn{
+    margin: 15px 8px 21px 0;
+    box-shadow: none;
+}
+
+.radio__btn .btn::after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    top: -2px;
+    left: -1px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+    border: 3.5px solid #47cc59;
+    visibility: visible;
+    border-radius: 1%;
+}
+
+.radio__btn .btn:checked::after{
+    content: '';
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.radio__btn span{
+    color: rgb(255, 255, 255);
+    margin-right: 170px;
+    font-size: 20px;
+}
+
+.booking__forminfo{
+    padding: 0 80px 20px;
+}
+
+.booking__form label{
+    margin-bottom: 10px;
+    margin-top: 10;
+    font-size: 22px;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #008011 !important;
+    font-size: 20px;
+}
+.input__grp{
+    width: 200px;
+    display: inline-block;
+}
+.form__control{
+    font-size: 25px !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.select-date::-webkit-calender-picker-indicator{
+    background: transparent !important;
+}
+
+.custom-select{
+    color: rgb(255, 255, 255) !important;
+    font-size: 15px !important;
+    border: 2.5px solid #47cc59 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+.custom-select option{
+    color: #333;
+}
+
+.flight{
+    width: 100% !important;
+    padding: 9px 0 !important;
+    font-size: 12px !important;
+    border: 1px solid #ced4da !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.flight:hover{
+    background: #008011 !important;
+    color: #fff !important;
+    transition: 0.5s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: block;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .slider {
+      width: 150%;
+      height: 15    0%;
+  }
+}
+
+.containers{
+    padding: 2rem;
+}
+
+.slider__wrapper{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 4/3;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0% 0.25);
+    border-radius: 1rem;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider__nav{
+    display: flex;
+    column-gap: 0.5rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 73%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+.slider__nav a{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #47cc59;
+    opacity: 0.9;
+    transition: opacity ease 250ms;
+}
+
+.slider__nav a:hover{
+    opacity: 1;
+    background-color: #ff0000;
+    transition: ease 0.7s;
+}
+
