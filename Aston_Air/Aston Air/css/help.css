@@ -54,11 +54,6 @@ img{
     padding: 2rem;
 }
 
-
-ul li:hover ul.sub__menu{
-    display: block;
-}
-
 .help__option{
     position: absolute;
     top: 200%;
