@@ -1,0 +1,94 @@
+
+.full-page{
+
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.233), rgba(4, 9, 30, 0.257)), url(../images/header-bg.jpg);
+    position: absolute;
+}
+body {
+    font-family: "Ralway", sans-serif;
+    background-color: #fafafa;
+  }
+  
+  .containerFluid {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .containerFluid h2 {
+    color: hotpink;
+    position: relative;
+    width: 24rem;
+  }
+  
+  .containerFluid h2::after {
+    position: absolute;
+    content: "";
+    bottom: 1000;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: hotpink;
+  }
+  
+  .accordion {
+    width: 100%;
+    padding: 0 50px;
+    border: 2px solid #f5f7f9;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+  }
+  
+  .accordion .icon {
+    margin:left 0;
+    width: px;
+    height: px;
+    background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+      no-repeat 8px 7px #1765db;
+    border-radius: 50%;
+    float: center;
+    transition: all 0.5s ease-in;
+  }
+  
+  .accordion h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #e9eef6;
+  }
+  
+  .active {
+    background-color: #121313;
+    color: #fff;
+  }
+  
+  .active .icon {
+    background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+      no-repeat 8px -25px #fff;
+  }
+  
+  .panel {
+    padding: 0 15px;
+    border-left: 1px solid #edf0f3;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease-in;
+  }
+
+  @media (min-width: 768px) {
+    .slider {
+      width: 150%;
+      height: 15    0%;
+  }
+}
+
+  
